@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  nginx:
+    build: nginx/
+    ports:
+      - "8088:80"
+    restart: always
+    volumes:
+      - ./www/:/var/www/
