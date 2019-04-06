@@ -1,17 +1,18 @@
-version: '3'
+version: '3.1'
 
 services:
-
   nginx:
     build: nginx/
+    working_dir: /var/www
     ports:
       - "8080:80"
-    restart: always
     volumes:
       - ~/www/:/var/www/
 
+
   php7.1:
     build: ./php/7.1
+    working_dir: /var/www
     volumes:
       - ~/www/:/var/www/
   

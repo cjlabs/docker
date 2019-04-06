@@ -12,5 +12,5 @@ echo "done"
 fi
 
 
-/usr/local/bin/docker-compose -f docker-compose.yml up --build -d --remove-orphans 
-
+/usr/local/bin/docker-compose -f docker-compose.yml up --build -d --remove-orphans;
+docker-compose ps;

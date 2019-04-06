@@ -29,5 +29,3 @@ RUN composer global require sebastian/phpcpd && \
 EXPOSE 9000
 
 
-WORKDIR /var/www/
-

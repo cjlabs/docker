@@ -16,5 +16,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 USER www-data
 EXPOSE 9000
-WORKDIR /var/www/
 
